@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PolyFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imagePoly2"
+            android:layout_width="300dp"
+            android:layout_height="126dp"
+            android:layout_marginTop="25dp"
+            android:contentDescription="@string/ImagePolyDesc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/poly" />
+
+        <EditText
+            android:id="@+id/editTextA3"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="220dp"
+            android:ems="10"
+            android:hint="@string/HintA"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/graph3"
+            app:layout_constraintEnd_toStartOf="@+id/editTextB3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagePoly2" />
+
+        <EditText
+            android:id="@+id/editTextB3"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="220dp"
+            android:ems="10"
+            android:hint="@string/HintB"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/graph3"
+            app:layout_constraintEnd_toStartOf="@+id/editTextH3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/editTextA3"
+            app:layout_constraintTop_toBottomOf="@+id/imagePoly2" />
+
+        <EditText
+            android:id="@+id/editTextH3"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="220dp"
+            android:ems="10"
+            android:hint="@string/HintH"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/graph3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/editTextB3"
+            app:layout_constraintTop_toBottomOf="@+id/imagePoly2" />
+
+        <Button
+            android:id="@+id/CalculateButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="150dp"
+            android:text="@string/CalculateButtonText"
+            app:layout_constraintBottom_toTopOf="@+id/graph3"
+            app:layout_constraintEnd_toStartOf="@+id/HelpButton3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextA3" />
+
+        <Button
+            android:id="@+id/HelpButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="150dp"
+            android:text="@string/HelpButtonText"
+            app:layout_constraintBottom_toTopOf="@+id/graph3"
+            app:layout_constraintEnd_toStartOf="@+id/ReturnButton6"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/CalculateButton3"
+            app:layout_constraintTop_toBottomOf="@+id/editTextB3" />
+
+        <TextView
+            android:id="@+id/textViewSolutionTrap3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/Placeholder1"
+            app:layout_constraintBottom_toTopOf="@+id/textViewSolutionSimpson3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CalculateButton3" />
+
+        <TextView
+            android:id="@+id/textViewSolutionSimpson3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/Placeholder2"
+            app:layout_constraintBottom_toTopOf="@+id/textViewSolutionExact3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSolutionTrap3" />
+
+        <TextView
+            android:id="@+id/textViewSolutionExact3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/Placeholder3"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/graph3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSolutionSimpson3" />
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/graph3"
+            android:layout_width="match_parent"
+            android:layout_height="275dip"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/ReturnButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="150dp"
+            android:text="@string/ReturnButtonText"
+            app:layout_constraintBottom_toTopOf="@+id/graph3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/HelpButton3"
+            app:layout_constraintTop_toBottomOf="@+id/editTextH3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

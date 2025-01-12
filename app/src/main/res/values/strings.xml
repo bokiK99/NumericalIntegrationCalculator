@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Kalkulator za numeričko rješavanje integrala</string>
+    <string name="ChoiceButtonText">Odaberi</string>
+    <string name="ImageSineDesc">Sinusna funkcija</string>
+    <string name="ImageCosineDesc">Kosinusna funkcija</string>
+    <string name="ImagePolyDesc">Polinom funkcija</string>
+    <string name="HintA">a</string>
+    <string name="HintB">b</string>
+    <string name="HintJ">j</string>
+    <string name="HintK">k</string>
+    <string name="HintH">h</string>
+    <string name="Placeholder1">Rješenje preko trapezoidne formule</string>
+    <string name="Placeholder2">Rješenje preko Simpsonove formule</string>
+    <string name="Placeholder3">Točno rješenje</string>
+    <string name="CalculateButtonText">Izračunaj</string>
+    <string name="HelpButtonText">Pomoć</string>
+    <string name="TextViewHelpTitle">Pomoć</string>
+    <string name="ReturnButtonText">Povratak</string>
+    <string name="HelpSineCosine">a, b : Granice integrala, njima određujemo na kojem će se području računati površina ispod krivulje, tj. funkcije
+        \nj, k: varijable koje utječu na rezultat i na graf same funkcije
+    \nh: korak računanja, manji korak računanja omogućuje veću preciznost numeričkog računanja integrala
+    \n<u>Bitna napomena:</u> Da bi se Simpsonova formula mogla primijeniti, potrebno je imati paran broj podintervala, dakle treba uzeti u obzir granice integrala a i b te korak računanja h
+    \nPrimjer 1: Ako su granice integrala a=0 i b=6, a korak računanja h=1, bit će 6 podintervala i Simpsonova formula će se moći primijeniti
+    \nPrimjer 2: Ako su granice integrala a=0 i b=5, a korak računanja h=1, bit će 5 podintervala i Simpsonova formula se neće moći primijeniti</string>
+    <string name="HelpPoly">a, b : Granice integrala, njima određujemo na kojem će se području računati površina ispod krivulje, tj. funkcije
+    \nh: korak računanja, manji korak računanja omogućuje veću preciznost numeričkog računanja integrala
+    \n<u>Bitna napomena:</u> Da bi se Simpsonova formula mogla primijeniti, potrebno je imati paran broj podintervala, dakle treba uzeti u obzir granice integrala a i b te korak računanja h
+    \nPrimjer 1: Ako su granice integrala a=0 i b=6, a korak računanja h=1, bit će 6 podintervala i Simpsonova formula će se moći primijeniti
+    \nPrimjer 2: Ako su granice integrala a=0 i b=5, a korak računanja h=1, bit će 5 podintervala i Simpsonova formula se neće moći primijeniti</string>
+
+</resources>

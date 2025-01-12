@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/app_name"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageSine"
+            android:layout_width="198dp"
+            android:layout_height="126dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/ImageSineDesc"
+            app:layout_constraintBottom_toTopOf="@+id/ChoiceButton1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/sine" />
+
+        <Button
+            android:id="@+id/ChoiceButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ChoiceButtonText"
+            app:layout_constraintBottom_toTopOf="@+id/imageCosine"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageSine"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <ImageView
+            android:id="@+id/imageCosine"
+            android:layout_width="198dp"
+            android:layout_height="126dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/ImageCosineDesc"
+            app:layout_constraintBottom_toTopOf="@+id/ChoiceButton2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ChoiceButton1"
+            app:srcCompat="@drawable/cosine" />
+
+        <Button
+            android:id="@+id/ChoiceButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ChoiceButtonText"
+            app:layout_constraintBottom_toTopOf="@+id/imagePoly"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageCosine" />
+
+        <ImageView
+            android:id="@+id/imagePoly"
+            android:layout_width="300dp"
+            android:layout_height="126dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/ImagePolyDesc"
+            app:layout_constraintBottom_toTopOf="@+id/ChoiceButton3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ChoiceButton2"
+            app:srcCompat="@drawable/poly" />
+
+        <Button
+            android:id="@+id/ChoiceButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ChoiceButtonText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagePoly" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
